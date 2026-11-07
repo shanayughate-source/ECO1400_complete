@@ -1,0 +1,13 @@
+metric,preferred_direction,FF3,FF5,FF3+RMW+CMA
+Mean R-squared,higher,0.9100779897,0.9163762113,0.914766771493
+Median R-squared,higher,0.9174607675,0.9248808536,0.922577955707
+Mean absolute alpha (% per month),lower,0.086925999,0.087502603,0.0843535779542
+Mean absolute alpha (% simple annualized),lower,1.0431119882,1.0500312358,1.01224293545
+RMSE alpha (% per month),lower,0.1313899205,0.1111034162,0.110312260579
+Maximum absolute alpha (% per month),lower,0.4669413203,0.2763493996,0.315054520292
+GRS F-statistic,interpret,3.5994822008,3.2004559675,3.02908872768
+GRS p-value,interpret,1.2e-08,3.238e-07,1.29209070609e-06
+HAC(6) joint-alpha Wald chi-square,interpret,85.1827820418,73.7299145068,70.0985403678
+HAC(6) joint-alpha Wald p-value,interpret,1.72e-08,1.0593e-06,3.72038044764e-06
+HAC(12) joint-alpha Wald chi-square,interpret,85.3255141258,75.7372930517,74.5188442884
+HAC(12) joint-alpha Wald p-value,interpret,1.63e-08,5.231e-07,8.03464915006e-07

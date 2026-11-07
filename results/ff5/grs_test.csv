@@ -1,0 +1,2 @@
+model,grs_f_statistic,p_value,numerator_df,denominator_df,test_assets,factors,observations,null_hypothesis,covariance_method
+FF5,3.2004559675,0.0000003238,25,726,25,5,756,All 25 portfolio alphas are jointly zero,Classical GRS with T-denominator residual and factor covariance estimates; not HAC-adjusted

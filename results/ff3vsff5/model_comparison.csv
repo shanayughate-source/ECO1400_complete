@@ -1,0 +1,13 @@
+metric,FF3,FF5,FF5_minus_FF3,descriptive_preference_rule
+Mean R-squared,0.9100779897,0.9163762113,0.006298221600000042,higher
+Median R-squared,0.9174607675,0.9248808536,0.007420086100000001,higher
+Mean absolute alpha (% per month),0.086925999,0.087502603,0.0005766039999999945,lower
+Mean absolute alpha (% simple annualized),1.0431119882,1.0500312358,0.006919247599999956,lower
+RMSE alpha (% per month),0.1313899205,0.1111034162,-0.020286504300000008,lower
+Maximum absolute alpha (% per month),0.4669413203,0.2763493996,-0.19059192070000003,lower
+GRS F-statistic,3.5994822008,3.2004559675,-0.39902623329999987,interpret
+GRS p-value,1.2e-08,3.238e-07,3.1179999999999997e-07,interpret
+HAC(6) joint-alpha Wald chi-square,85.1827820418,73.7299145068,-11.452867534999996,interpret
+HAC(6) joint-alpha Wald p-value,1.72e-08,1.0593e-06,1.0421e-06,interpret
+HAC(12) joint-alpha Wald chi-square,85.3255141258,75.7372930517,-9.588221074100005,interpret
+HAC(12) joint-alpha Wald p-value,1.63e-08,5.231e-07,5.068000000000001e-07,interpret

@@ -1,0 +1,25 @@
+FAMA-FRENCH 3-FACTOR MODEL: UPDATED ESTIMATION
+================================================================
+Model: FF3
+Sample: 1963-07 to 2026-06
+Monthly observations: 756
+Test assets: 25 value-weighted Size-B/M portfolios
+Estimator: OLS time-series regression for each portfolio
+Dependent variable: portfolio return minus the corresponding model's RF
+Units: percentage points per month
+Factors: Mkt_RF, SMB, HML
+Individual inference: Newey-West HAC(6) primary; HAC(12) sensitivity
+GRS: classical finite-sample F test; not HAC-adjusted
+Joint-alpha robustness: stacked cross-equation HAC Wald with chi-square reference
+
+Mean R-squared: 0.910078
+Median R-squared: 0.917461
+Mean absolute alpha (% per month): 0.086926
+RMSE alpha (% per month): 0.131390
+Maximum absolute alpha (% per month): 0.466941
+GRS F(25, 728): 3.599482; p-value=1.1952728e-08
+HAC(6) joint alpha Wald chi-square(25): 85.182782; p-value=1.7207151e-08
+HAC(12) joint alpha Wald chi-square(25): 85.325514; p-value=1.6324077e-08
+
+Interpretation: R-squared is descriptive. Assess pricing performance using alphas and joint tests as well.
+Data note: official FF3 and FF5 factors are retained from their respective estimation-sample files.

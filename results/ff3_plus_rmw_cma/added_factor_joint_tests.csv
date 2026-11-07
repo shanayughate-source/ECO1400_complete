@@ -1,0 +1,4 @@
+test,hac_lags,wald_chi2,df,p_value
+All 25 RMW and 25 CMA loadings = 0,6,736.630269777,50,7.38770078666e-123
+All 25 RMW loadings = 0,6,466.477187545,25,6.62377062852e-83
+All 25 CMA loadings = 0,6,91.5281756855,25,1.60865815936e-09

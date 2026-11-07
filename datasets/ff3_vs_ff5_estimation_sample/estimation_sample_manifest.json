@@ -1,0 +1,103 @@
+{
+  "project": "ECO1400_complete",
+  "sample_start": "1963-07",
+  "sample_end": "2026-06",
+  "frequency": "monthly",
+  "expected_observations": 756,
+  "actual_observations": 756,
+  "test_assets": [
+    "SMALL LoBM",
+    "ME1 BM2",
+    "ME1 BM3",
+    "ME1 BM4",
+    "SMALL HiBM",
+    "ME2 BM1",
+    "ME2 BM2",
+    "ME2 BM3",
+    "ME2 BM4",
+    "ME2 BM5",
+    "ME3 BM1",
+    "ME3 BM2",
+    "ME3 BM3",
+    "ME3 BM4",
+    "ME3 BM5",
+    "ME4 BM1",
+    "ME4 BM2",
+    "ME4 BM3",
+    "ME4 BM4",
+    "ME4 BM5",
+    "BIG LoBM",
+    "ME5 BM2",
+    "ME5 BM3",
+    "ME5 BM4",
+    "BIG HiBM"
+  ],
+  "return_units": "percentage points",
+  "excess_return_definition": "portfolio return minus the corresponding model's RF",
+  "ff3_factor_file": "ff3_factors_monthly.csv",
+  "ff5_factor_file": "ff5_factors_monthly.csv",
+  "ff3_smb_source": "official FF3 factor file",
+  "ff5_smb_source": "official FF5 factor file",
+  "market_factor_comparison": {
+    "factor": "Mkt_RF",
+    "months_different": 167,
+    "months_compared": 756,
+    "max_abs_difference": 0.08000000000000007,
+    "tolerance": 1e-06,
+    "examples": [
+      {
+        "month": "1964-01",
+        "ff3_value": 2.24,
+        "ff5_value": 2.27,
+        "absolute_difference": 0.029999999999999805
+      },
+      {
+        "month": "1964-04",
+        "ff3_value": 0.1,
+        "ff5_value": 0.11,
+        "absolute_difference": 0.009999999999999995
+      },
+      {
+        "month": "1965-11",
+        "ff3_value": -0.03,
+        "ff5_value": -0.02,
+        "absolute_difference": 0.009999999999999998
+      },
+      {
+        "month": "1967-03",
+        "ff3_value": 3.99,
+        "ff5_value": 4.0,
+        "absolute_difference": 0.009999999999999787
+      },
+      {
+        "month": "1967-09",
+        "ff3_value": 3.1,
+        "ff5_value": 3.11,
+        "absolute_difference": 0.009999999999999787
+      }
+    ]
+  },
+  "strict_common_factor_checks": [
+    {
+      "factor": "HML",
+      "months_different": 0,
+      "months_compared": 756,
+      "max_abs_difference": 0.0,
+      "tolerance": 1e-06,
+      "examples": []
+    },
+    {
+      "factor": "RF",
+      "months_different": 0,
+      "months_compared": 756,
+      "max_abs_difference": 0.0,
+      "tolerance": 1e-06,
+      "examples": []
+    }
+  ],
+  "source_files_sha256": {
+    "size_bm_portfolios_monthly.csv": "9603e169dce20bbb9c65bb6b9ec8bd57225b78e93de29df60bbedfc3bff61507",
+    "ff3_factors_monthly.csv": "203ababbad088323560795c6b66ef85385ae39556cce2a128bfec089c787120d",
+    "ff5_factors_monthly.csv": "4e505838cd2fa985683ba9effc0b2919ace30a941478e99ae2e738bef1df31f8"
+  }
+}

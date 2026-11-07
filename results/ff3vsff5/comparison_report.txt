@@ -1,0 +1,37 @@
+OFFICIAL FAMA-FRENCH FF3 VS FF5: UPDATED SAMPLE COMPARISON
+========================================================================
+Sample: July 1963 through June 2026 (756 monthly observations)
+Test assets: the same 25 value-weighted Size-B/M portfolios
+The comparison uses existing model outputs; no regressions are re-estimated.
+
+AGGREGATE PRICING-ERROR COMPARISON
+FF3 mean absolute alpha: 0.08692600% per month
+FF5 mean absolute alpha: 0.08750260% per month
+FF3 alpha RMSE: 0.13138992% per month
+FF5 alpha RMSE: 0.11110342% per month
+Portfolios with smaller absolute alpha under FF5: 10 of 25
+
+JOINT PRICING TESTS
+FF3 GRS F-statistic: 3.59948220; p-value: 1.2e-08
+FF5 GRS F-statistic: 3.20045597; p-value: 3.238e-07
+FF3 HAC(6) joint-alpha Wald p-value: 1.72e-08
+FF5 HAC(6) joint-alpha Wald p-value: 1.0593e-06
+
+INTERPRETATION NOTES
+1. Lower mean absolute alpha and lower alpha RMSE indicate smaller in-sample pricing errors.
+2. A GRS p-value below the chosen significance level rejects that model's null that all 25 alphas are zero.
+3. Do not rank models by comparing GRS F-statistics or p-values mechanically; each is a separate joint pricing test and the models have different factor counts.
+4. R-squared is descriptive and should not be the sole model-selection criterion.
+5. FF3 and FF5 are official published specifications, but they are not strictly nested because their SMB factors differ in construction.
+6. Coefficient differences for SMB should be treated cautiously. FF3 SMB is based on Size/B-M portfolios, while FF5 SMB averages Size/B-M, Size/OP and Size/Investment size premiums.
+7. Factor-input diagnostics report differences in Mkt-RF, HML and RF across the two official input files.
+8. Alpha differences in the portfolio table are descriptive; this script does not calculate a formal test of the difference between estimated alphas.
+
+FACTOR INPUT DIAGNOSTICS
+Mkt_RF: max |difference|=0.08; mean |difference|=0.002936507937; months differing=167; correlation=0.9999985297
+HML: max |difference|=0; mean |difference|=0; months differing=0; correlation=1
+RF: max |difference|=0; mean |difference|=0; months differing=0; correlation=1
+25 raw portfolio returns: max |difference|=0; mean |difference|=0; months differing=0; correlation=nan
+
+This is an updated common-sample comparison, not an exact reproduction of the original published tables.
+For a cleaner incremental test of profitability and investment, estimate an additional nested model using the FF3 factor series plus RMW and CMA, then jointly test the added factor loadings.

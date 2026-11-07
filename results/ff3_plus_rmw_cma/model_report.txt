@@ -1,0 +1,35 @@
+NESTED FF3 + RMW + CMA MODEL
+====================================================================
+Sample: 1963-07 to 2026-06
+Observations: 756
+Test assets: 25
+Factors: official FF3 Mkt-RF, SMB, HML + official FF5 RMW, CMA
+Risk-free rate: official FF3 RF
+Estimator: 25 separate OLS time-series regressions
+Individual inference: Newey-West HAC(6) and HAC(12)
+Joint alpha tests: stacked cross-equation HAC Wald
+Additional-factor tests: stacked cross-equation HAC Wald on 50 added loadings
+GRS: classical finite-sample F test; not HAC-adjusted
+Units: percentage points per month
+
+Mean R-squared: 0.91476677
+Mean absolute alpha: 0.08435358% per month
+RMSE alpha: 0.11031226% per month
+Maximum absolute alpha: 0.31505452% per month
+GRS F(25, 726): 3.02908873; p-value=1.2920907e-06
+HAC(6) joint alpha Wald chi-square: 70.09854037; p-value=3.7203804e-06
+HAC(12) joint alpha Wald chi-square: 74.51884429; p-value=8.0346492e-07
+
+INCREMENTAL FACTOR TESTS (HAC 6)
+Joint 50 restrictions (all RMW and CMA loadings zero): chi-square(50)=736.63026978; p=7.3877008e-123
+RMW 25 restrictions: chi-square(25)=466.47718754; p=6.6237706e-83
+CMA 25 restrictions: chi-square(25)=91.52817569; p=1.6086582e-09
+
+DATA CONSTRUCTION
+The 25 raw portfolio return series are taken from the FF3 estimation sample.
+Excess returns are calculated as raw portfolio return minus FF3 RF.
+Mkt-RF, SMB and HML are taken from the official FF3 sample.
+RMW and CMA are taken from the official FF5 sample.
+Maximum absolute difference between the two raw portfolio panels: 0
+Maximum absolute difference between FF3 and FF5 RF: 0
+This is a nested diagnostic extension, not the official Fama-French five-factor model.

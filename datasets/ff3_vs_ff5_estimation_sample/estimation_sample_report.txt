@@ -1,0 +1,22 @@
+ECO1400 COMMON FF3/FF5 ESTIMATION SAMPLE
+================================================
+Required period: 1963-07 to 2026-06
+Expected monthly observations: 756
+Actual monthly observations: 756 in FF3 and 756 in FF5
+Test assets: 25 value-weighted Size-B/M portfolios
+Frequency: Monthly
+Return units: Percentage points
+Dependent variable: each portfolio return minus that model file's RF
+Official FF3 and FF5 factor series are preserved separately.
+Official FF3 SMB and official FF5 SMB are retained separately by construction.
+Mkt-RF diagnostic (difference is recorded, not treated as an error):
+  Months different: 167 / 756
+  Maximum absolute difference: 0.08 percentage points
+  Example differences: [{'month': '1964-01', 'ff3_value': 2.24, 'ff5_value': 2.27, 'absolute_difference': 0.029999999999999805}, {'month': '1964-04', 'ff3_value': 0.1, 'ff5_value': 0.11, 'absolute_difference': 0.009999999999999995}, {'month': '1965-11', 'ff3_value': -0.03, 'ff5_value': -0.02, 'absolute_difference': 0.009999999999999998}, {'month': '1967-03', 'ff3_value': 3.99, 'ff5_value': 4.0, 'absolute_difference': 0.009999999999999787}, {'month': '1967-09', 'ff3_value': 3.1, 'ff5_value': 3.11, 'absolute_difference': 0.009999999999999787}]
+Strict common-factor checks:
+  HML: 0 months different; maximum absolute difference = 0
+  RF: 0 months different; maximum absolute difference = 0
+
+FF3 estimation sample: datasets/ff3_vs_ff5_estimation_sample/ff3_estimation_sample.csv
+FF5 estimation sample: datasets/ff3_vs_ff5_estimation_sample/ff5_estimation_sample.csv
+No missing months or missing values were silently dropped.

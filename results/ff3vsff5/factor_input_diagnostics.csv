@@ -1,0 +1,5 @@
+series,max_abs_difference_percentage_points,mean_abs_difference_percentage_points,months_differing_at_1e-10,correlation,interpretation
+Mkt_RF,0.08,0.00293650793651,167,0.999998529739,Descriptive diagnostic; each official model retains its own factor series.
+HML,0,0,0,1,Descriptive diagnostic; each official model retains its own factor series.
+RF,0,0,0,1,Descriptive diagnostic; each official model retains its own factor series.
+25 raw portfolio returns,0,0,0,,These should match exactly because all models use the same 25 test assets.

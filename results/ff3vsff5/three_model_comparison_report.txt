@@ -1,0 +1,54 @@
+THREE-MODEL FAMA-FRENCH COMPARISON
+============================================================================
+Sample: July 1963 through June 2026 (756 monthly observations)
+Test assets: the same 25 value-weighted Size-Book-to-Market portfolios
+Models: official FF3; official FF5; nested FF3 + RMW + CMA
+
+AGGREGATE RESULTS
+FF3:
+  Mean R-squared: 0.91007799
+  Mean absolute alpha: 0.08692600% per month
+  RMSE alpha: 0.13138992% per month
+  Maximum absolute alpha: 0.46694132% per month
+  GRS F-statistic: 3.59948220; p=1.2e-08
+  HAC(6) joint-alpha Wald p-value: 1.72e-08
+  HAC(12) joint-alpha Wald p-value: 1.63e-08
+
+FF5:
+  Mean R-squared: 0.91637621
+  Mean absolute alpha: 0.08750260% per month
+  RMSE alpha: 0.11110342% per month
+  Maximum absolute alpha: 0.27634940% per month
+  GRS F-statistic: 3.20045597; p=3.238e-07
+  HAC(6) joint-alpha Wald p-value: 1.0593e-06
+  HAC(12) joint-alpha Wald p-value: 5.231e-07
+
+FF3+RMW+CMA:
+  Mean R-squared: 0.91476677
+  Mean absolute alpha: 0.08435358% per month
+  RMSE alpha: 0.11031226% per month
+  Maximum absolute alpha: 0.31505452% per month
+  GRS F-statistic: 3.02908873; p=1.2920907e-06
+  HAC(6) joint-alpha Wald p-value: 3.7203804e-06
+  HAC(12) joint-alpha Wald p-value: 8.0346492e-07
+  HAC(6) joint test: all 50 added RMW/CMA loadings = 0; p=7.3877008e-123
+
+PORTFOLIO-LEVEL ABSOLUTE ALPHA COMPARISON
+Portfolios where FF5 has lower |alpha| than FF3: 10 of 25
+Portfolios where nested model has lower |alpha| than FF3: 13 of 25
+Portfolios where nested model has lower |alpha| than FF5: 13 of 25
+
+Absolute-alpha reduction is defined as |alpha_baseline| - |alpha_comparison|.
+Positive values mean the comparison model has a smaller absolute alpha.
+Negative values mean the comparison model has a larger absolute alpha.
+
+INTERPRETATION
+The official FF3 and official FF5 are not strictly nested because their SMB factors differ.
+The nested FF3+RMW+CMA specification keeps the official FF3 Mkt-RF, SMB and HML series
+and adds RMW and CMA from the official FF5 file. It is a diagnostic extension, not official FF5.
+The nested model's joint HAC Wald test of the 50 added loadings assesses whether RMW and CMA
+loadings are jointly zero across the 25 portfolios, conditional on the FF3 factors.
+Do not select a model solely on R-squared or by mechanically ranking GRS p-values.
+GRS is a separate classical joint-alpha test for each model; it is not a direct test of
+whether one model is statistically better than another.
+The table compares in-sample pricing errors. It does not establish out-of-sample superiority.

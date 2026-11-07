@@ -1,0 +1,24 @@
+FAMA/FRENCH 5 FACTORS: CLEANING REPORT
+================================================
+Source file: F-F_Research_Data_5_Factors_2x3 3.csv
+Source SHA-256: 0028f2f3b9f634c34a2bdc0e67dc1e6fc22a2ef18b77177a7926635a785330dd
+Observations: 759
+First month: 1963-07
+Last month: 2026-09
+Factors: Mkt-RF, SMB, HML, RMW, CMA, RF
+Date format: YYYY-MM-01
+Units: Percentage points (not decimals); no division by 100 performed.
+Missing/special-code cells: 0
+Special missing-code values handled: [-999.99, -999.0, -99.99]
+
+Missing observations by factor:
+  Mkt-RF: 0
+  SMB: 0
+  HML: 0
+  RMW: 0
+  CMA: 0
+  RF: 0
+
+Cleaned CSV: datasets/clean/ff5_factors_monthly.csv
+Only monthly observations were extracted; annual observations were excluded.
+No missing values were interpolated or forward-filled.

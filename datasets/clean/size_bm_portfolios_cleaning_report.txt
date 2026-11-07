@@ -1,0 +1,44 @@
+KENNETH FRENCH 25 SIZE-B/M PORTFOLIOS: CLEANING REPORT
+==============================================================
+Source file: 25_Portfolios_5x5 2.csv
+Source SHA-256: 9b415bb1041a4f619a6ee43aa3aaaf4cf86685f6e2998a8c713150a0b19b776b
+Extracted section: Average Value Weighted Returns -- Monthly
+Return weighting: Value-weighted
+Observations: 1203
+Portfolios: 25
+First month: 1926-07
+Last month: 2026-09
+Date format: YYYY-MM-01
+Units: Percentage points (not decimals); no division by 100 performed.
+Missing/special-code cells: 0
+Special missing-code values handled: [-999.99, -999.0, -99.99]
+
+Missing observations by portfolio:
+  SMALL LoBM: 0
+  ME1 BM2: 0
+  ME1 BM3: 0
+  ME1 BM4: 0
+  SMALL HiBM: 0
+  ME2 BM1: 0
+  ME2 BM2: 0
+  ME2 BM3: 0
+  ME2 BM4: 0
+  ME2 BM5: 0
+  ME3 BM1: 0
+  ME3 BM2: 0
+  ME3 BM3: 0
+  ME3 BM4: 0
+  ME3 BM5: 0
+  ME4 BM1: 0
+  ME4 BM2: 0
+  ME4 BM3: 0
+  ME4 BM4: 0
+  ME4 BM5: 0
+  BIG LoBM: 0
+  ME5 BM2: 0
+  ME5 BM3: 0
+  ME5 BM4: 0
+  BIG HiBM: 0
+
+Cleaned CSV: datasets/clean/size_bm_portfolios_monthly.csv
+No missing values were interpolated or forward-filled.

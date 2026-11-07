@@ -1,0 +1,2 @@
+model,grs_f_statistic,p_value,numerator_df,denominator_df,test_assets,factors,observations,null_hypothesis,method
+FF3+RMW+CMA,3.02908872768,1.29209070609e-06,25,726,25,5,756,All 25 portfolio alphas are jointly zero,Classical GRS; not HAC-adjusted

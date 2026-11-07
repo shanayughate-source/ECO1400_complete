@@ -1,0 +1,3 @@
+model,hac_lags,wald_chi2,degrees_freedom,p_value,null_hypothesis,covariance_method
+FF5,6,73.7299145068,25,0.0000010593,All 25 portfolio alphas are jointly zero,Stacked cross-equation Newey-West HAC
+FF5,12,75.7372930517,25,0.0000005231,All 25 portfolio alphas are jointly zero,Stacked cross-equation Newey-West HAC

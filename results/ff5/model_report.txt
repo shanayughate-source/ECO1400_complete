@@ -1,0 +1,28 @@
+FAMA-FRENCH FIVE-FACTOR MODEL
+================================================================
+Sample: 1963-07 to 2026-06
+Monthly observations: 756
+Test assets: 25
+Estimator: OLS time-series regressions
+Dependent variable: portfolio return minus RF
+Units: percentage points per month
+Factors: Mkt_RF, SMB, HML, RMW, CMA
+Primary inference: Newey-West HAC(6)
+Robustness inference: Newey-West HAC(12)
+GRS: classical finite-sample F test
+Additional test: stacked cross-equation HAC Wald
+
+Mean R-squared: 0.916376
+Median R-squared: 0.924881
+Mean absolute alpha: 0.087503% per month
+RMSE alpha: 0.111103% per month
+Maximum absolute alpha: 0.276349% per month
+GRS F(25, 726): 3.200456
+GRS p-value: 3.237797e-07
+HAC(6) joint alpha Wald: 73.729915
+HAC(6) p-value: 1.0592661e-06
+HAC(12) joint alpha Wald: 75.737293
+HAC(12) p-value: 5.2307984e-07
+
+Interpretation: assess pricing performance using alphas and joint tests, not R-squared alone.
+Official FF5 factor series retained.
